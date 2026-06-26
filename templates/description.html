@@ -1,0 +1,15 @@
+<p>Title: {{title}}</p>
+<p>Information: {{info}}</p>
+<p>Features:</p>
+<ol>
+{%for i in features%}
+        <li>{{i}}</li>
+{%endfor%}
+</ol>
+
+<p>Topics:</p>
+<ul>
+{%for t in topics%}
+        <li>{{t}}</li>
+{%endfor%}
+</ul>
