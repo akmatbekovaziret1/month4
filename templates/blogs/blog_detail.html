@@ -1,0 +1,8 @@
+<h1>Title: {{blog_id.name}}</h1>
+
+{% if blog_id.description%}
+<p>Description: {{blog_id.description}}</p>
+{%else%}
+<p>No description</p>
+{%endif%}
+<p>Date: {{blog_id.created_at}}</p>

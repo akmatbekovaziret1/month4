@@ -1,0 +1,26 @@
+<h1>All blogs</h1>
+<hr>
+<ol>
+    {% for i in blogs %}
+    <li>
+        <p>Title: {{i.title}}</p>
+        <p>Date: {{i.created_at}}</p>
+        <p><a href="/blog_list/{{i.id}}">More</a></p>
+    </li>
+    {%endfor%}
+</ol>
+
+<br>
+
+<h1>News</h1>
+<hr>
+<ul>
+    {%for n in news%}
+    <li>
+        <img src="{{n.photo.url}}" alt="" width = "250" height = "200">
+        <p>Title: {{n.title}}</p>
+        <p>Source: {{n.source}}</p>
+        <p>Date: {{n.created_at}}</p>
+    </li>
+    {%endfor%}
+</ul>
